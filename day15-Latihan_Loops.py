@@ -1,25 +1,23 @@
-#
+#PROGEAM MELIHAT POLA 
 
-tugas = []
+while True:  #ini akan terus menerus berulang sampai user pilih 3
+    print("1. Pola Bintang")
+    print("2. Pola huruf")
+    print("3. Keluar")
 
-while True:
-    print("1.Tambah Tugas")
-    print("2.Lihat Semua Tugas")
-    print("3.Reset Tugas")
-    print("4.Keluar")
-
-    pilih = int(input("Pilih: "))
+    pilih = int(input("Pilih (1/2/3): "))
 
     if pilih == 1:
-        tugas = input("Masukkan Tugas: ")
-        print("1. ", tugas)
-        print("="*10)
+        for i in range(1,20,3):
+            print("*"*i)
     elif pilih == 2:
-        if len(tugas) == 0:
-            print("Belum ada tugas")
-        else:
-            print("/nDaftar Tugas")
-            for i in tugas:
-                print(1. )
-
-
+        for i in range(1,10):
+            for j in range(1, i+1):
+                print(j, end="")
+            print()
+    elif pilih == 3:
+        print("Program Selesai")
+        break
+    else:
+        print("Masukkan pilihan yang sesuai")
+    
