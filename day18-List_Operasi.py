@@ -57,3 +57,13 @@ thislist = ["eyes","nose","mouth","ear"]
 thislist.clear()
 print(thislist)
 
+#sort() mengurutkan item list
+mylist = ["blue","green","pink","black"]
+mylist.sort()
+print(mylist)
+
+#reverse() mengurutkan item list dari terbesar ke terkecil
+mylist = [1, 5, 4, 6]
+mylist.sort(reverse=True)
+print(mylist)
+
